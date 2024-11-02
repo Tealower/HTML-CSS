@@ -1,0 +1,12 @@
+img 
+{
+    width: 200px;
+}
+body header img 
+{
+    width: 50px;
+}
+.x-1 img
+{
+    width: 80px;
+}
