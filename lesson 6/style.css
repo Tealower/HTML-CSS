@@ -1,12 +1,18 @@
 img 
-{
-    width: 200px;
-}
+{width: 200px;}
 body header img 
-{
-    width: 50px;
-}
+{width: 50px;}
 .x-1 img
-{
-    width: 80px;
-}
+{width: 80px;}
+header img 
+{width: 50px;}
+header ul
+{display: flex;
+list-style: none;}
+header ul a
+{padding: 10px 20px;
+text-decoration: none;
+background-color: blue;
+color: azure;}
+header ul a:hover
+{background-color: black;}
