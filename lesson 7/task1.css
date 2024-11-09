@@ -1,0 +1,4 @@
+.p1 {color: green}
+.p2 {font-size: 100px;}
+.p3 {width: 20px;}
+p:nth-child(5) {background-color: aqua;}
