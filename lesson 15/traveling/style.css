@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+*
+{margin: 0px;
+padding: 0px;}
+body
+{font-family: "Marck Script", serif; 
+font-size: 1em;
+color: #7a343c;
+text-shadow: 2px 3px 5px whitesmoke;}
+.bgImage 
+{position: fixed;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100vh;
+background-image: url(images/travel-destination-background.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+z-index: -1;}
+.container
+{display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto auto auto 250px;
+grid-template-areas: 
+"header header header"
+"London Paris temQuote1"
+"Venice Venice Turkey"
+"itemQuote2 itemQuote2 Turkey";
+column-gap: 10px;
+row-gap: 15px;
+justify-items: center;
+align-items: center;}
+
+.header
+{grid-area: header;
+font-size: 1.2em;
+padding: 15px;
+background-color: grey;
+text-align: center;}
+.header p
+{font-size: 1.5em;
+font-weight: 700;
+padding-top: 20px;}
+.header p:hover
+{color: black;}
+
+.London
+{grid-area: London;
+width: 225px;
+height: 300px;
+background-image: url(images/london.jpg);
+background-size: cover;}
+
+.Paris
+{grid-area: Paris;
+width: 225px;
+height: 300px;
+background-image: url(images/paris.jpg);
+background-size: cover;}
+
+.itemQuote1
+{grid-area: itemQuote1;}
+
+.Venice
+{grid-area: Venice;}
+
+.Turkey
+{grid-area: Turkey;}
+
+.itemQuote2
+{grid-area: itemQuote2;}

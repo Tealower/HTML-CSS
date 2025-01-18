@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+    .contain 
+        {display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 100px 400px 150px 200px;
+        column-gap: 5px;
+        row-gap: 5px;
+        grid-template-areas: 
+        "myh myh myh myh"
+        "myls myc myc myrs"
+        "myls myc myc ."
+        "myf myf myf myf";}
+
+    .contain div 
+        {background-color: rgba(204, 216, 211, 0.726);
+        padding: 10px;
+        text-align: center;}
+    .header{grid-area: myh;}
+    .leftside{grid-area: myls;}
+    .contain .center{grid-area: myc; background-color: aqua;}
+    .righside{grid-area: myrs;}
+    .footer{grid-area: myf;}
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+        <div class="header">Text 1</div>
+        <div class="leftside">Text 2</div>
+        <div class="center">Text 3</div>
+        <div class="righside">Text 4</div>
+        <div class="footer">Text 5</div>
+    </div>
+</body>
+
+</html>
