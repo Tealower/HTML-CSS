@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body
+{background-color: #e0e0e0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;}
+
+body > div 
+{display: grid;
+width: 80%;
+grid-template-columns: repeat(3 ,1fr);
+gap: 15px;}
+
+div > div 
+{background-color: white;
+padding: 10px;
+transition: transform 0.4s ease;
+width: 150px;}
+div > div:hover 
+{transform: rotate(50deg);}
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <img src="https://picsum.photos/150/250" alt="">
+        </div>
+    
+    
+        <div>
+            <img src="https://picsum.photos/150/250" alt="">
+        </div>
+    
+    
+        <div>
+            <img src="https://picsum.photos/150/250" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/150/250" alt="">
+        </div>
+    
+    
+        <div>
+            <img src="https://picsum.photos/150/250" alt="">
+        </div>
+    
+    
+        <div>
+            <img src="https://picsum.photos/150/250" alt="">
+        </div>
+    </div>
+</body>
+</html>
